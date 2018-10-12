@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+}
+select{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+a {
+  margin: 0.5rem;
+}
+
+#color {
+  padding: 0.4rem;
+}
