@@ -13,7 +13,7 @@ ajaxGet("banks.json", function (reponse) {
     $('#clean').remove();
     $("#infos").empty();
     $('#link').empty();
-    $("#infos").append('<h3 class="card-title">' + banks[idBank].name + '</h3>');
+    $("#infos").append('<h2 class="card-title">' + banks[idBank].name + '</h2>');
     $("#infos").append('<p id="color" class="badge badge-secondary">' + banks[idBank].state + '</p>');
     $('#color').css("background-color" , "#" + banks[idBank].color);
     $("#infos").append('<legend>Type(s) : </legend><p class="card-text"> ' + acctypes + '</p>');

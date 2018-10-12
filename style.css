@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-legend {
+div legend {
   font-size: 1rem;
   font-weight: bold;
 }
