@@ -21,18 +21,6 @@ ajaxGet("banks.json", function (reponse) {
     for (var i in banks[idBank].urls) {
     $('#link').append('<a href="'+ banks[idBank].urls[i] + '" class="btn btn-primary" target="_blank">' + banks[idBank].urls[i] + '</button>');
     }
-
-    });
+  });
 
 });
-
-//Boucle for puis
-//chercher jquery inArray pour trier les types répétés
-//stocker le tout dans un tableau
-//faire le dico
-for (var i in banks[idBank].account_types) {
-  $('#account').append('<p class="card-text">'+ banks[idBank].account_types[i] + '</p>');
-}
-for (var i in banks[idBank].capabilities) {
-  $('#cpcts').append('<p class="card-text">'+ banks[idBank].capabilities[i] + '</p>');
-}
