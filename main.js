@@ -13,6 +13,7 @@ ajaxGet("banks.json", function (reponse) {
     $('#clean').remove();
     $("#infos").empty();
     $('#link').empty();
+    $("#infos").append('<img src="https://demo.biapi.pro/2.0/banks/' + banks[idBank].id + '/logos/thumbnail">');
     $("#infos").append('<h2 class="card-title">' + banks[idBank].name + '</h2>');
     $("#infos").append('<p id="color" class="badge badge-secondary">' + banks[idBank].state + '</p>');
     $('#color').css("background-color" , "#" + banks[idBank].color);
