@@ -1,5 +1,9 @@
 //Accès aux noms des banques
-ajaxGet("banks.json", function (reponse) {
+// Via serveur local (pas de latence)
+//ajaxGet("banks.json", function (reponse) {
+
+//Via API (beaucoup de latence)
+ajaxGet("https://demo.biapi.pro/2.0/banks?stats&expand=logos", function (reponse) {
   var banks = JSON.parse(reponse).banks;
   for (var i in banks) {
     $("#meteo").append('<option value="' + i + '">' + banks[i].name + '</option>');
